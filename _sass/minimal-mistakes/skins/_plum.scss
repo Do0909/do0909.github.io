@@ -11,20 +11,21 @@ $border-color: mix(#fff, $background-color, 20%) !default;
 $code-background-color:rgba(240, 240, 240, 0.5);
 $code-background-color-dark: rgba(185, 185, 185, 0.25) !default;
 
-$mark-highlight-color: rgba($primary-color, 0.15) !default;
+$mark-highlight-color: rgba(#f4fb71, 0.15) !default;
 $block-quote-background-color: rgba($primary-color, 0.1) !default;
 $form-background-color: rgba(255, 255, 255, 0.527) !default;
 $footer-background-color: mix(#000, $background-color, 3%) !default;
+
+
+
 $link-color: $primary-color !default;
-
-$link-color-hover: mix($primary-color, $background-color, 70%) !default;
-$link-color-visited: mix($link-color, $background-color, 98%) !default;
-
-$masthead-link-color: #ffffff !default;
+$link-color-hover: mix(#3777e6,$text-color, 70%) !default;
+$link-color-visited: mix(#ffffff, $background-color, 100%) !default;
+$masthead-link-color: $primary-color !default;
 $masthead-link-color-hover: mix(#3777e6, $text-color, 70%) !default;
-$navicon-link-color-hover: mix(#3777e6, $background-color, 80%) !default;
-
+$navicon-link-color-hover: mix(#3777e6, $text-color, 70%) !default;
 $active-color: mix($primary-color, $background-color, 5%) !default;
+
 
 /* YIQ color contrast */
 $yiq-contrasted-dark-default: $text-color !default;
@@ -50,6 +51,7 @@ $base0d: #3777e6 !default;
 $base0e: #ad00a1 !default;
 $base0f: #cc6633 !default;
 
+
 .author__urls.social-icons i,
 .author__urls.social-icons .svg-inline--fa,
 .page__footer-follow .social-icons i,
@@ -59,11 +61,20 @@ $base0f: #cc6633 !default;
 
 .page__content {
   color:white;
-  a,
-  a:visited {
-    color: inherit;
+  a {color:$text-color}
+  a:hover {
+    color:$link-color-hover !important;
   }
 }
+
+.nav__list .nav__items {
+  color:white !important;
+  a {color: $text-color}
+  a:hover {
+    color: $link-color-hover !important;
+  }
+}
+
 
 .page__title {
   color:white;
@@ -75,7 +86,10 @@ html {color:white}
   color:white!important;
   background-color: #545a61;
 }
-.toc {background-color:#545a61 !important}
+.toc {
+  font-size:1.2em;
+  background-color:#545a61 !important
+}
 
 /* next/previous buttons */
 .pagination--pager {
