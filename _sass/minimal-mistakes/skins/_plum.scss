@@ -89,6 +89,14 @@ html {color:white}
   }
 }
 
+.masthead {
+  background-color: rgb(47 68 95 / 0.8) !important;
+}
+
+.page__footer {
+  border-top:#545a61 1px solid;
+}
+
 .ais-search-box .ais-search-box--input {
   background-color: $form-background-color;
 }
