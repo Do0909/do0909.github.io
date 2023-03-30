@@ -3,9 +3,9 @@
    ========================================================================== */
 
 /* Colors */
-$background-color: #ffffff !default;
-$text-color: rgb(7, 7, 7) !default;
-$primary-color: #FF6C02 !default;
+$background-color: #1B2430 !default;
+$text-color: rgb(255, 255, 255) !default;
+$primary-color: #ffffff !default;
 
 $border-color: mix(#fff, $background-color, 20%) !default;
 $code-background-color:rgba(240, 240, 240, 0.5);
@@ -18,11 +18,11 @@ $footer-background-color: mix(#000, $background-color, 3%) !default;
 $link-color: $primary-color !default;
 
 $link-color-hover: mix($primary-color, $background-color, 70%) !default;
-$link-color-visited: mix($link-color, rgb(3, 3, 3), 98%) !default;
+$link-color-visited: mix($link-color, $background-color, 98%) !default;
 
-$masthead-link-color: $text-color !default;
-$masthead-link-color-hover: mix(#000, $text-color, 70%) !default;
-$navicon-link-color-hover: mix(#000, $background-color, 80%) !default;
+$masthead-link-color: #ffffff !default;
+$masthead-link-color-hover: mix(#3777e6, $text-color, 70%) !default;
+$navicon-link-color-hover: mix(#3777e6, $background-color, 80%) !default;
 
 $active-color: mix($primary-color, $background-color, 5%) !default;
 
@@ -58,23 +58,40 @@ $base0f: #cc6633 !default;
 }
 
 .page__content {
+  color:white;
   a,
   a:visited {
     color: inherit;
   }
 }
 
+.page__title {
+  color:white;
+}
+
+html {color:white}
+
+.toc .nav__title {
+  color:white!important;
+  background-color: #545a61;
+}
+.toc {background-color:#545a61 !important}
+
 /* next/previous buttons */
 .pagination--pager {
+  visibility: hidden;
   color: $text-color;
   background-color: rgba($primary-color, 0.8);
   border-color: transparent;
 
   &:visited {
-    color: $text-color;
+    color: #3777e6;
   }
 }
 
 .ais-search-box .ais-search-box--input {
   background-color: $form-background-color;
 }
+
+
+.archive__item-excerpt { color:white}
