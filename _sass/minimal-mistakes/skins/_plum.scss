@@ -8,7 +8,7 @@ $text-color: rgb(255, 255, 255) !default;
 $primary-color: #ffffff !default;
 
 $border-color: mix(#fff, $background-color, 20%) !default;
-$code-background-color:rgba(240, 240, 240, 0.5);
+$code-background-color:rgba(1, 1, 1, 0.7);
 $code-background-color-dark: rgba(185, 185, 185, 0.25) !default;
 
 $mark-highlight-color: rgba(#f4fb71, 0.15) !default;
@@ -117,3 +117,5 @@ html {color:white}
 
 
 .archive__item-excerpt { color:white}
+
+code { color: $text-color}
